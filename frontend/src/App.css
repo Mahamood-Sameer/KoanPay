@@ -1,38 +1,355 @@
-.App {
-  text-align: center;
+/*  Login comp  */
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #09c6f9;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+  .rows{
+    padding:0px;
+  }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+  .rows{
+    padding:0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (max-width: 1050px) {
+  .container {
+    width: 50% !important;
+    /* background-color: red !important; */
+  }
+  .rows{
+    padding:0px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 70% !important;
+    /* background-color: red !important; */
+  }
+  .rows{
+    padding:0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0% !important;
+    box-shadow: 0px 0px 0px 0px !important;
+    margin: 0 !important;
+    /* background-color: red !important; */
+  }
+  .rows{
+    padding:0px;
+  }
+}
+
+.form-container {
+  display: flex;
+  background-color: #b5efff;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container-new {
+  height: fit-content;
+  padding: 40px;
+  width: 30%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: white;
+  border-radius: 2%;
+  box-shadow: 3px 8px 28px #888888;
+}
+.brief-koanpay {
+  color: black !important;
+  height: 60% !important;
+}
+.btn-login {
+  background: #449ce5;
+}
+
+/* Superuser comp */
+.superuser_table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 50vh; */
+}
+
+.superuser_container {
+  background: #b5efff;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.superuser_subcontainer {
+  border-radius: 0.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.btn-util {
+  background: #449ce5;
+}
+
+/* CreateBank comp */
+.bank-signup {
+  width: 60%;
+  padding-top: 2.2rem;
+}
+
+/* Admin comp */
+
+.admin_container {
+  background: #b5efff;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.admin_subcontainer {
+  border-radius: 0.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row-width {
+  display: flex;
+  padding: 40px;
+  /* max-width: 30%; */
+}
+
+.rows {
+  display: flex;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 30%;
+}
+
+.admin-images {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Define Struct */
+
+.define-struct-container {
+  background: #b5efff;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.define-struct-subcontainer {
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+}
+
+.error-msg {
+  color: red;
+}
+
+.accordion-gap {
+  margin-bottom: 2rem;
+}
+
+.struct_container {
+  background: #b5efff;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+}
+
+.struct_subcontainer {
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* userlogs */
+.userlog-container {
+  background: #b5efff;
+  padding-top: 1.5rem;
+  padding-bottom: 8rem;
+}
+
+.userlog-subcontainer {
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* User */
+
+.user-container {
+  background: #b5efff;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+
+.user-subcontainer {
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
+}
+
+.btn-gap {
+  margin-left: 1rem;
+}
+
+.set-width {
+  width: 30%;
+}
+
+.title-padding {
+  padding-bottom: 1rem;
+}
+
+/* Navbar */
+.img-padding {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Footer */
+.bg-color {
+  background: #2196f3;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding-left: 2rem;
+  padding-top: 1.2rem;
+}
+
+.struct_container {
+  padding: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+/* Terminal-Container */
+.terminals_container {
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height: 50vh; */
+}
+
+.create-termi-paginate {
+  display: flex;
+  gap: 60rem;
+}
+
+.create-termi-btn {
+  margin-top: 0;
+}
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* .no-terminal-found {
+  margin-top: 2rem;
+} */
+
+/* Update and View Terminal */
+.viewandupdateterminal_container {
+  /* margin:20px; */
+  background: #b5efff;
+  padding-top: 3rem;
+  padding-bottom: 8rem;
+}
+.params_container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem;
 }
-
-.App-link {
-  color: #61dafb;
+.param-tabs {
+  font-size: 0.8rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log-tabs {
+  font-size: 0.8rem;
+}
+.tabs_content {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+.add_entry_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+.edit_icon:hover {
+  cursor: pointer;
 }
